@@ -1,0 +1,49 @@
+---
+import Card from '../components/Card.astro';
+import Layout from '../layouts/Layout.astro';
+import SectionContainer from '../components/SectionContainer.astro'
+---
+
+<Layout title="Alfalfa | ¿Porque deberia interesarte?" description='Index de la pagina'>
+	
+	<main >
+		<h1>
+			Test
+		</h1>
+		
+	</main>
+	<ul>
+		<SectionContainer>
+			<Card title='Hello astro' time='2024-01-02' tags="Javascript"/>
+		</SectionContainer>
+	</ul>
+	
+</Layout>
+
+<style is:global>
+	:root {
+	  color-scheme: light dark;
+	}
+	html {
+	  font-family: "Times New Roman", system-ui, sans-serif;
+	  scroll-behavior: smooth;
+	}
+	body {
+	  color: rgba(17, 17, 17, 0.9);
+	  display: flex;
+	  flex-direction: column;
+	  min-height: 100vh;
+	  overscroll-behavior: none;
+	}
+	@media (prefers-reduced-motion: reduce) {
+	  html {
+		scroll-behavior: auto;
+	  }
+	}
+	@media (prefers-color-scheme: dark) {
+	  body {
+		color: rgba(255, 255, 255, 0.9);
+	  }
+	}
+  </style>
+  
